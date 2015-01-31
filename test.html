@@ -1,0 +1,52 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<style>
+#container {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: -webkit-radial-gradient(top,#746C6C,#0D0D0D);
+	background: radial-gradient(top,#746C6C,#0D0D0D);
+}
+
+#container div {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	width: 400px;
+	height: 100px;
+	margin: -100px 0 0 -200px;
+}
+
+div .nice{
+	width: 300px;
+	height: 60px;
+	margin: 80px 92px 0 92px;
+	border: none;
+	background-color: #3A3939;
+	-webkit-box-shadow: inset 0 1px 1px #000, 0 1px 0 0 #a5a5a5;
+	box-shadow: inset 0 1px 1px #000, 0 1px 0 0 #a5a5a5;
+	padding-left: 16px;
+	color: #fff;
+	font-style: italic;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 16px;
+}
+</style>
+<div id="container">
+  <div>  
+    <input type="text" placeholder="Paste video URL here..." class="nice"/>
+	<select id="format" class="nice">
+		<option value="mp3" selected>MP3</option>
+		<option value="aac">AAC</option>
+		<option value="wav">WAV</option>
+		<option value="m4a">M4A</option>
+	</select>
+	<input type="button" id="process" name="process" value="PROCESS">
+  </div>
+</div>
